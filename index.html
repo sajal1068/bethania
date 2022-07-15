@@ -326,7 +326,7 @@
             </div>
             <div class="row">
 
-                <div class="owl-carousel">
+                <div class="owl-carousel oursermons">
 
             <div class="item">                
                <div class="col-md-12 event-wrap d-md-flex ftco-animate">
@@ -749,6 +749,28 @@
             </div>
         </div>
     </section>
+
+    <section>
+      <div class="container px-md-0">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="owl-carousel logoCarousal owl-theme">
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+                  <div class="item"><img src="images/logodemo.png" class="img-fluid"></div>
+              </div>
+            </div>
+         </div>
+      </div>
+    </section> 
       <section class="ftco-section ftco-no-pb"  style="background: aliceblue;">
          <div class="container-fluid px-md-0">
             <div class="row no-gutters justify-content-center pb-5 mb-3">
@@ -950,8 +972,7 @@ $(".custom-carousel-2").owlCarousel({
             navText: "<>",
       autoplayTimeout:5000,
     });
-        $('.owl-carousel').owlCarousel({
-            loop:true,
+        $('.oursermons').owlCarousel({           
             margin:10,
             loop:true,
             responsiveClass:true,
@@ -973,7 +994,32 @@ $(".custom-carousel-2").owlCarousel({
                     loop:false
                 }
             }
-        })
+        });
+
+        $('.logoCarousal').owlCarousel({
+                  loop:true,
+            margin:10,
+            nav:true,
+            dots: false,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            pagination: false,
+            responsive:{
+               0:{
+                     items:2
+               },
+               600:{
+                     items:4
+               },
+               1000:{
+                     items:6
+               }
+            }
+        });
+
+
+        
 
         function openCity(evt, cityName) {
           var i, tabcontent, tablinks;

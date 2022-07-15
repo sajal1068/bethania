@@ -3010,3 +3010,17 @@ border:solid 2px #082D84 !important;
   top: 0px;
   padding: 15px 15px;
  }
+
+ .logoCarousal .owl-dots .owl-dot::after{
+   content:none;
+ }
+
+ .logoCarousal .owl-prev, .owl-next{
+   width:15px!important;
+   background:red!important;
+   font-size: 20px!important;
+   font-weight: bold!important;
+   border-radius: 0px!important;
+   color:#fff!important;
+  outline:none;
+ }
