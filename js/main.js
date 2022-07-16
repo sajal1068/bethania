@@ -224,5 +224,13 @@
 		}
 	  });
 
+	  $(document).ready(function(){
+		$("#resNav").click(function(){
+		   $(".rightMenu").animate({
+			  height: "toggle"
+		   });
+		});
+		});
+
 })(jQuery);
 
